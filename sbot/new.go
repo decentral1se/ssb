@@ -694,6 +694,8 @@ func New(fopts ...Option) (*Sbot, error) {
 		s.verifyRouter,
 		histOpts...)
 
+	sm.SetDependencies(s.Replicator.Lister(), s.verifyRouter)
+
 	if s.disableEBT {
 		s.public.Register(gossipPlug)
 	} else {
