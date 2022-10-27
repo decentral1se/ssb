@@ -227,7 +227,7 @@ go install ./cmd/go-sbot
 go install ./cmd/sbotcli
 ```
 
-## Testing 
+## Testing
 
 Once you have configured your environment set up to build the binaries, you can also run the tests. We have unit tests for most of the modules, most importantly `message`, `blobstore` and the replication plugins (`gossip` and `blobs`). There are also interoperability tests with the nodejs implementation (this requires recent versions of [node and npm](http://nodejs.org)).
 
@@ -348,6 +348,12 @@ The error can look like this:
 ```
 badger failed to open: Mmap value log file. Path=C:\\some\\where\\.ssb-go\\indexes\\contacts\\db\\000000.vlog. Error=MapViewOfFile: Not enough memory resources are available to process this command.
 ```
+
+### `go-ssb` is too memory hungry?
+
+Building with `-tags nommio` can be useful.
+
+Try experimenting with `-numPeer` / `-numRepl`, see [`#124`](https://github.com/ssbc/go-ssb/issues/124) for more.
 
 ## Stack links
 
