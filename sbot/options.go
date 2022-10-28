@@ -431,7 +431,7 @@ func LateOption(o Option) Option {
 // WithNumberOfConcurrentReplicationsPerPeer specifies how many feeds can be
 // replicated at the same time using one peer connection. This shouldn't be
 // higher than WithNumberOfConcurrentReplications, setting it higher will be
-// ineffective.
+// ineffective. Only legacy gossip is supported.
 func WithNumberOfConcurrentReplicationsPerPeer(n uint) Option {
 	return func(s *Sbot) error {
 		s.numberOfConcurrentReplicationsPerPeer = n
@@ -440,7 +440,7 @@ func WithNumberOfConcurrentReplicationsPerPeer(n uint) Option {
 }
 
 // WithNumberOfConcurrentReplications specifies how many feeds can be
-// replicated at the same time.
+// replicated at the same time. Only legacy gossip is supported.
 func WithNumberOfConcurrentReplications(n uint) Option {
 	return func(s *Sbot) error {
 		s.numberOfConcurrentReplications = n
