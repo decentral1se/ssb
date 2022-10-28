@@ -93,8 +93,8 @@ func initFlags() {
 	u, err := user.Current()
 	checkFatal(err)
 
-	flag.UintVar(&flagNumPeer, "numPeer", 5, "how many feeds can be replicated with one peer connection (shouldn't be higher than numRepl)")
-	flag.UintVar(&flagNumRepl, "numRepl", 10, "how many feeds can be replicated concurrently")
+	flag.UintVar(&flagNumPeer, "numPeer", 5, "how many feeds can be replicated with one peer connection using legacy gossip replication (shouldn't be higher than numRepl)")
+	flag.UintVar(&flagNumRepl, "numRepl", 10, "how many feeds can be replicated concurrently using legacy gossip replication")
 	flag.UintVar(&flagHops, "hops", 1, "how many hops to fetch (1: friends, 2:friends of friends)")
 	flag.BoolVar(&flagPromisc, "promisc", false, "bypass graph auth and fetch remote's feed")
 

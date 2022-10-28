@@ -34,9 +34,9 @@ promisc = false
 # Disable the UNIX socket RPC interface
 nounixsock = false 
 
-# how many feeds can be replicated with one peer connection (shouldn't be higher than numRepl)
+# how many feeds can be replicated with one peer connection using legacy gossip replication (shouldn't be higher than numRepl)
 numPeer = 5
-# how many feeds can be replicated concurrently
+# how many feeds can be replicated concurrently using legacy gossip replication
 numRepl = 10
 `
 	expectedConfig := SbotConfig{
@@ -122,9 +122,9 @@ promisc = false
 # Disable the UNIX socket RPC interface
 nounixsock = false 
 
-# how many feeds can be replicated with one peer connection (shouldn't be higher than numRepl)
+# how many feeds can be replicated with one peer connection using legacy gossip replication (shouldn't be higher than numRepl)
 numPeer = 5
-# how many feeds can be replicated concurrently
+# how many feeds can be replicated concurrently using legacy gossip replication
 numRepl = 10
 `
 	expectedConfig := SbotConfig{

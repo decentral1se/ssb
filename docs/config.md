@@ -54,9 +54,9 @@ hmac = ""
 # e.g. go-sbot hops of 1 <=> ssb-js hops of 2
 hops = 1
 
-# how many feeds can be replicated with one peer connection (shouldn't be higher than numRepl)
+# how many feeds can be replicated with one peer connection using legacy gossip (shouldn't be higher than numRepl)
 numPeer = 5
-# how many feeds can be replicated concurrently
+# how many feeds can be replicated concurrently using legacy gossip
 numRepl = 10
 
 # Address to listen on

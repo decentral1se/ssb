@@ -349,7 +349,7 @@ go build -tags lite ./cmd/go-sbot
 
 It uses a lightweight BadgerDB configuration that [Planetary](https://github.com/planetary-social/ssb/blob/a76247b9e67a2792113f33840d1f15bbb1467d93/repo/badger_ios.go) have been running.
 
-Try also experimenting with `-numPeer` / `-numRepl` which will limit the amount of replication that can happen concurrently. See [`#124`](https://github.com/ssbc/go-ssb/issues/124) for more.
+Try also experimenting with `-numPeer` / `-numRepl` if you're using legacy gossip replication. This will limit the amount of replication that can happen concurrently. See [`#124`](https://github.com/ssbc/go-ssb/issues/124) for more details.
 
 ## Stack links
 
