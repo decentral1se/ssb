@@ -13,7 +13,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/dgraph-io/badger/v3 v3.2103.5
 	github.com/dgraph-io/sroar v0.0.0-20220527172339-b92b7eaaf6e0
-	github.com/dustin/go-humanize v1.0.0
+	github.com/dustin/go-humanize v1.0.1
 	github.com/go-kit/kit v0.12.0
 	github.com/gorilla/websocket v1.5.0
 	github.com/hashicorp/go-multierror v1.1.1
