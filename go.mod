@@ -25,7 +25,7 @@ require (
 	github.com/machinebox/progress v0.2.0
 	github.com/maxbrunsfeld/counterfeiter/v6 v6.5.0
 	github.com/prometheus/client_golang v1.14.0
-	github.com/rs/cors v1.8.3
+	github.com/rs/cors v1.9.0
 	github.com/shurcooL/go-goon v1.0.0
 	github.com/ssbc/go-gabbygrove v0.2.2
 	github.com/ssbc/go-luigi v0.3.7-0.20230119190114-bd28e676fa99
